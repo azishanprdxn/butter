@@ -141,3 +141,230 @@ table {
 * {
   box-sizing: border-box;
 }
+
+.container {
+  max-width: 1440px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+/* Background Image */
+
+.background {
+  position: relative;
+  width: 300px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-image: url('./butter_assets/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #000;
+  /* overflow: hidden; */
+}
+
+/* Logo */
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
+
+/* Table */
+
+.table {
+  position: absolute;
+  margin-bottom: -4px;
+  bottom: 0;
+  left: 0;
+}
+
+/* Text: Boring Sandwich */
+
+.boring-sandwich {
+  width: 50%;
+  position: absolute;
+  top: 125px;
+  left: 75px;
+  color: #ee3827;
+  font-size: 34px;
+  line-height: 1.1;
+  text-shadow: 1px 1px 1px #000;
+  text-align: center;
+  display: none;
+}
+
+/* Sad Sonali */
+
+.sad-sonali {
+  position: absolute;
+  bottom: 90px;
+  right: 0;
+  display: none;
+}
+
+/* Plate */
+
+.plate {
+  position: absolute;
+  bottom: 18px;
+  left: -38px;
+  display: none;
+}
+
+/* Text: Sandwicheto */
+
+.sandwicheto {
+  width: 64%;
+  position: absolute;
+  top: 125px;
+  left: 54px;
+  color: #ee3827;
+  font-size: 34px;
+  line-height: 1.1;
+  text-shadow: 1px 1px 1px #000;
+  text-align: center;
+  display: none;
+}
+
+/* Happy Sonali */
+
+.happy-sonali {
+  position: absolute;
+  bottom: 98px;
+  right: -1px;
+  display: none;
+}
+
+/* Text: FunFoods */
+
+.funfoods {
+  width: 95%;
+  position: absolute;
+  top: 125px;
+  left: 8px;
+  color: #ee3827;
+  font-size: 34px;
+  line-height: 1.1;
+  text-shadow: 1px 1px 1px #000;
+  text-align: center;
+  display: none;
+}
+
+/* Chef */
+
+.chef {
+  position: absolute;
+  bottom: 98px;
+  right: 0px;
+  display: none;
+}
+
+/* Bottom Bread */
+
+.bottom-bread {
+  position: absolute;
+  bottom: 16px;
+  left: -36px;
+  display: none;
+}
+
+/* Middle Layer */
+
+.middle-layer {
+  position: absolute;
+  bottom: 38px;
+  left: 0;
+  display: none;
+}
+
+
+/* Mayo */
+
+.mayo {
+  position: absolute;
+  bottom: 50px;
+  left: 8px;
+  display: none;
+}
+
+
+/* Knife */
+
+.knife {
+  position: absolute;
+  bottom: 52px;
+  left: 134px;
+  transform: rotate(-55deg);
+  display: none;
+}
+
+/* Top Bread */
+
+.top-bread {
+  position: absolute;
+  bottom: 60px;
+  left: 5px;
+  display: none;
+}
+
+/* Text: Food Mein Magic */
+
+.food-magic {
+  width: 60%;
+  position: absolute;
+  top: 125px;
+  left: 60px;
+  color: #ee3827;
+  font-size: 34px;
+  line-height: 1.1;
+  text-shadow: 1px 1px 1px #000;
+  text-align: center;
+  /* display: none; */
+}
+
+/* Link: Get Recipe */
+
+.get-recipe a {
+  position: absolute;
+  top: 230px;
+  left: 78px;
+  padding: 12px 24px;
+  background-color: #0e0088;
+  border-radius: 10px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.get-recipe a:hover {
+  background-color: #fff;
+  color: #0e0088;
+  box-shadow: 1px 1px 2px #0e0088, -1px -1px 2px #0e0088;
+  transition: 0.3s;
+}
+
+/* Box */
+
+.box {
+  position: absolute;
+  bottom: 24px;
+  right: 86px;
+  /* display: none; */
+}
+
+/* Box */
+
+.hat {
+  position: absolute;
+  bottom: 150px;
+  right: 52px;
+  /* display: none; */
+}
