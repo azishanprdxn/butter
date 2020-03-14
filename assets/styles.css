@@ -166,6 +166,12 @@ table {
   background-size: cover;
   border: 1px solid #000;
   overflow: hidden;
+  animation: full 1s;
+}
+
+@keyframes full {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* Logo */
@@ -183,6 +189,16 @@ table {
   margin-bottom: -4px;
   bottom: 0;
   left: 0;
+  opacity: 0;
+  animation-name: bottom-table;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bottom-table {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* Text: Boring Sandwich */
@@ -197,7 +213,17 @@ table {
   line-height: 1.1;
   text-shadow: 1px 1px 1px #000;
   text-align: center;
-  display: none;
+  /* display: none; */
+  transform: translateX(-400px);
+  animation-name: plate;
+  animation-duration: 0.4s;
+  animation-delay: 2.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes boring-sandwich {
+  from { transform: translateX(-400px); }
+  to { transform: translateX(0); }
 }
 
 /* Sad Sonali */
@@ -206,7 +232,17 @@ table {
   position: absolute;
   bottom: 90px;
   right: 0;
-  display: none;
+  /* display: none; */
+  transform: translateX(400px);
+  animation-name: sad-sonali;
+  animation-duration: 0.4s;
+  animation-delay: 2.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sad-sonali {
+  from { transform: translateX(400px); }
+  to { transform: translateX(0); }
 }
 
 /* Plate */
@@ -215,7 +251,18 @@ table {
   position: absolute;
   bottom: 18px;
   left: -38px;
-  display: none;
+  /* display: none; */
+  transform: translateX(-400px);
+  animation-name: plate;
+  animation-duration: 0.4s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes plate {
+  from { transform: translateX(-400px); }
+  to { transform: translateX(0); }
 }
 
 /* Text: Sandwicheto */
@@ -326,7 +373,7 @@ table {
   line-height: 1.1;
   text-shadow: 1px 1px 1px #000;
   text-align: center;
-  /* display: none; */
+  display: none;
 }
 
 /* Link: Get Recipe */
@@ -342,6 +389,7 @@ table {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   text-decoration: none;
+  /* display: none; */
 }
 
 .get-recipe a:hover {
@@ -357,7 +405,7 @@ table {
   position: absolute;
   bottom: 24px;
   right: 86px;
-  /* display: none; */
+  display: none;
 }
 
 /* Box */
@@ -366,5 +414,5 @@ table {
   position: absolute;
   bottom: 150px;
   right: 52px;
-  /* display: none; */
+  display: none;
 }
