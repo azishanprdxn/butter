@@ -144,12 +144,12 @@ table {
 
 .container {
   max-width: 1440px;
-  padding: 0 12px;
+  padding: 0 8px;
   margin: 0 auto;
 }
 
 .wrapper {
-  max-width: 60%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -170,8 +170,13 @@ table {
 }
 
 @keyframes full {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Logo */
@@ -191,14 +196,19 @@ table {
   left: 0;
   opacity: 0;
   animation-name: bottom-table;
-  animation-duration: 1s;
   animation-delay: 1s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
 @keyframes bottom-table {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Text: Boring Sandwich */
@@ -213,17 +223,22 @@ table {
   line-height: 1.1;
   text-shadow: 1px 1px 1px #000;
   text-align: center;
-  /* display: none; */
-  transform: translateX(-400px);
-  animation-name: plate;
-  animation-duration: 0.4s;
+  transform: translateX(-300px);
+  animation-name: boring-sandwich;
   animation-delay: 2.2s;
+  animation-duration: 4s;
   animation-fill-mode: forwards;
 }
 
 @keyframes boring-sandwich {
-  from { transform: translateX(-400px); }
-  to { transform: translateX(0); }
+  0% {
+    transform: translateX(-300px);
+  }
+
+  10%,
+  80% {
+    transform: translateX(0);
+  }
 }
 
 /* Sad Sonali */
@@ -232,17 +247,22 @@ table {
   position: absolute;
   bottom: 90px;
   right: 0;
-  /* display: none; */
-  transform: translateX(400px);
+  transform: translateX(300px);
   animation-name: sad-sonali;
-  animation-duration: 0.4s;
   animation-delay: 2.2s;
+  animation-duration: 4s;
   animation-fill-mode: forwards;
 }
 
 @keyframes sad-sonali {
-  from { transform: translateX(400px); }
-  to { transform: translateX(0); }
+  0% {
+    transform: translateX(300px);
+  }
+
+  10%,
+  80% {
+    transform: translateX(0);
+  }
 }
 
 /* Plate */
@@ -251,18 +271,22 @@ table {
   position: absolute;
   bottom: 18px;
   left: -38px;
-  /* display: none; */
-  transform: translateX(-400px);
+  transform: translateX(-300px);
   animation-name: plate;
-  animation-duration: 0.4s;
+  animation-duration: 3.5s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
-
 }
 
 @keyframes plate {
-  from { transform: translateX(-400px); }
-  to { transform: translateX(0); }
+  0% {
+    transform: translateX(-300px);
+  }
+
+  10%,
+  90% {
+    transform: translateX(0);
+  }
 }
 
 /* Text: Sandwicheto */
@@ -277,7 +301,26 @@ table {
   line-height: 1.1;
   text-shadow: 1px 1px 1px #000;
   text-align: center;
-  display: none;
+  transform: translateX(-300px);
+  animation-name: sandwicheto;
+  animation-delay: 8s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sandwicheto {
+  0% {
+    transform: translateX(-300px);
+  }
+
+  10%,
+  80% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-300px);
+  }
 }
 
 /* Happy Sonali */
@@ -286,7 +329,26 @@ table {
   position: absolute;
   bottom: 98px;
   right: -1px;
-  display: none;
+  transform: translateX(300px);
+  animation-name: happy-sonali;
+  animation-delay: 8s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes happy-sonali {
+  0% {
+    transform: translateX(300px);
+  }
+
+  10%,
+  80% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(300px);
+  }
 }
 
 /* Text: FunFoods */
@@ -301,7 +363,29 @@ table {
   line-height: 1.1;
   text-shadow: 1px 1px 1px #000;
   text-align: center;
-  display: none;
+  transform: translateX(-300px);
+  animation-name: funfoods;
+  animation-delay: 11s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes funfoods {
+  0% {
+    transform: translateX(-300px);
+  }
+
+  10% {
+    transform: translateX(0);
+  }
+
+  79% {
+    transform: translateX(0);
+  }
+
+  80% {
+    transform: translateX(-300px);
+  }
 }
 
 /* Chef */
@@ -310,7 +394,30 @@ table {
   position: absolute;
   bottom: 98px;
   right: 0px;
-  display: none;
+  /* display: none; */
+  transform: translateX(300px);
+  animation-name: chef;
+  animation-delay: 11s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes chef {
+  0% {
+    transform: translateX(300px);
+  }
+
+  10% {
+    transform: translateX(0);
+  }
+
+  79% {
+    transform: translateX(0);
+  }
+
+  80% {
+    transform: translateX(300px);
+  }
 }
 
 /* Bottom Bread */
@@ -319,7 +426,25 @@ table {
   position: absolute;
   bottom: 16px;
   left: -36px;
-  display: none;
+  transform: translateX(-300px);
+  animation-name: bottom-bread;
+  animation-delay: 5.2s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bottom-bread {
+  0% {
+    transform: translateX(-300px);
+  }
+
+  10% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /* Middle Layer */
@@ -328,9 +453,26 @@ table {
   position: absolute;
   bottom: 38px;
   left: 0;
-  display: none;
+  transform: translateX(-300px);
+  animation-name: middle-layer;
+  animation-delay: 5.2s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
 }
 
+@keyframes middle-layer {
+  0% {
+    transform: translateX(-300px);
+  }
+
+  10% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
 
 /* Mayo */
 
@@ -338,9 +480,23 @@ table {
   position: absolute;
   bottom: 50px;
   left: 8px;
-  display: none;
+  /* display: none; */
+  opacity: 0;
+  animation-name: mayo;
+  animation-delay: 6.8s;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
 }
 
+@keyframes mayo {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
 
 /* Knife */
 
@@ -348,8 +504,29 @@ table {
   position: absolute;
   bottom: 52px;
   left: 134px;
+  /* display: none; */
+  opacity: 0;
   transform: rotate(-55deg);
-  display: none;
+  animation-name: knife;
+  animation-delay: 6.8s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes knife {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px) rotate(-55deg);
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateX(-100px) rotate(-55deg);
+  }
+
+  30% {
+    transform: translateX(0) rotate(-55deg);
+  }
 }
 
 /* Top Bread */
@@ -358,7 +535,56 @@ table {
   position: absolute;
   bottom: 60px;
   left: 5px;
-  display: none;
+  /* display: none; */
+  transform: translate(-300px, 10px);
+  animation-name: top-bread;
+  animation-delay: 5.2s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes top-bread {
+  0% {
+    transform: translate(-300px, 10px);
+  }
+
+  10%,
+  25% {
+    transform: translate(0, 10px);
+  }
+
+  40% {
+    transform: translate(0, -30px);
+  }
+
+  55% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Full Mayo Sandwich */
+
+.mayo-sandwich {
+  position: absolute;
+  top: 600px;
+  animation-name: full-mayo;
+  animation-delay: 15s;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes full-mayo {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-300px);
+  }
 }
 
 /* Text: Food Mein Magic */
@@ -373,7 +599,86 @@ table {
   line-height: 1.1;
   text-shadow: 1px 1px 1px #000;
   text-align: center;
-  display: none;
+  /* display: none; */
+  transform: translateX(-300px);
+  animation-name: food-magic;
+  animation-delay: 18s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes food-magic {
+  0% {
+    transform: translateX(-300px);
+  }
+
+  10% {
+    transform: translateX(0);
+  }
+
+  79% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Box */
+
+.box {
+  position: absolute;
+  bottom: 24px;
+  right: 86px;
+  /* display: none; */
+  transform: translateX(300px);
+  animation-name: box;
+  animation-delay: 18s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes box {
+  0% {
+    transform: translateX(300px);
+  }
+
+  10% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Box */
+
+.hat {
+  position: absolute;
+  bottom: 150px;
+  right: 52px;
+  /* display: none; */
+  transform: translate(-250px, -130px);
+  animation-name: hat;
+  animation-delay: 18s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hat {
+  10% {
+    transform: translate(0, -80px);
+  }
+
+  30% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 /* Link: Get Recipe */
@@ -390,6 +695,11 @@ table {
   font-size: 20px;
   text-decoration: none;
   /* display: none; */
+  transform: translate(-250px, -200px);
+  animation-name: link;
+  animation-delay: 20s;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
 }
 
 .get-recipe a:hover {
@@ -399,20 +709,12 @@ table {
   transition: 0.3s;
 }
 
-/* Box */
+@keyframes link {
+  0% {
+    transform: translate(-250px, -180px);
+  }
 
-.box {
-  position: absolute;
-  bottom: 24px;
-  right: 86px;
-  display: none;
-}
-
-/* Box */
-
-.hat {
-  position: absolute;
-  bottom: 150px;
-  right: 52px;
-  display: none;
+  100% {
+    transform: translate(0, 0);
+  }
 }
